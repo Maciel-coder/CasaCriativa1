@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novas Ideias</title>
+  <link rel="stylesheet" href="../Style/style.css">
+  <link rel="stylesheet" href="..Style/ideas.css">
+</head>
+
+<body id="page-idea"> <!-- Inicio da sessão de ideias da page-->
+  <div id="container">
+    <header>
+      <img src="../Image/logo.jpg">
+      <nav>
+        <li onclick="onOff()">
+          <a href="#">Nova Ideia </a>
+        </li>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+      </nav>
+    </header>
+
+    <section id="title">
+      <p>Em Exibição</p>
+      <h1>Ideias</h1>
+    </section>
+
+    <main>
+      <section id="ideas">
+        <!--Inicio Sessão ideias -->
+        <div class="idea">
+          <!--idea 1-->
+          <img src="../Image/coding.png" alt="Course Dev">
+          <div class="content">
+            <h3>Course Programming</h3>
+            <p>Learning</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+               culpa mollitia aperiam eaque nihil iusto corrupti suscipit voluptatem 
+               doloribus accusamus est beatae natus rerum ex tenetur cupiditate repellat sapiente nobis?
+            </div>
+            <a href="#">Ir para Ideia</a>
+          </div>
+        </div>
+        <!--fim idea 1-->
+        
+        <!--Inicio idea 2 -->
+        <div class="idea">
+          <img src="../Image/exercise.png" alt="Course Dev">
+          <div class="content">
+            <h3>Exercise</h3>
+            <p>Saude</p>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores eveniet temporibus maxime
+               rem autem sit maiores doloremque eaque commodi?
+               Magni vitae delectus iusto ad, repellat consequatur reiciendis dolores tempora animi.
+            </div>
+            <a href="#">Ir para Ideia</a>
+          </div>
+        </div>
+        <!--fim idea 2-->
+
+        <!-- Inicio idea 3-->
+        <div class="idea">
+          <img src="../Image/meditation.png" alt="Course Dev">
+          <div class="content">
+            <h3>Meditation</h3>
+            <p>mentality</p>
+            <div class="description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi molestiae saepe fuga nemo consequuntur 
+              temporibus libero eligendi ratione laudantium natus? 
+              Consequatur molestiae inventore soluta veritatis repellendus ut vero necessitatibus odio!
+            </div>
+            <a href="#">Ir para ideia</a>
+          </div>
+        </div>
+        <!-- fim idea 3-->
+        
+        <!-- Inicio idea 4-->
+        <div class="idea">
+          <img src="../Image/meditation.png" alt="Course Dev">
+          <div class="content">
+            <h3>Meditation</h3>
+            <p>mentality</p>
+            <div class="description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+              Quod eius nulla laborum nam sint facere nihil tempore placeat pariatur aliquid illo aliquam voluptates, 
+              explicabo dolorem exercitationem eaque! 
+              Unde, corporis officia!
+            </div>
+            <a href="#">Ir para ideia</a>
+          </div>
+        </div>
+        <!-- fim idea 4-->
+      </section>
+      <!--Fim Sessão idea-->
+    </main>
+
+    <footer>
+      <p id="footer">
+        Com ♥️ <a href="http://rocketseat.com.br">Rocketseat
+        </a>
+      </p>
+    </footer>
+  </div>
+  
+  <!--inicio formulario -->
+  <div id="modal" class="hide">
+    <div class="content">
+      <h1>Nova Ideia</h1>
+      <form action="" method="get" accept-charset="utf-8">
+        <div class="input-wrapper" <label for="title">Título da ideia</label>
+          <input type="text" name="title" />
+        </div>
+        <div class="input-wrapper" <label for="category">Categoria</label>
+          <input type="text" name="category" />
+        </div>
+        <div>
+          <label for="image">Link da imagem</label>
+          <input type="url" name="image" />
+        </div>
+        <div>
+          <label for="description">digite uma descrição para a ideia</label>
+          <textarea name="description" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+          <label for="link">Link da ideia</label>
+          <input type="url" name="link" />
+        </div>
+        <button>Salvar</button>
+        <a href="#" onclick="onOff()">Voltar</a>
+      </form>
+    </div>
+  </div>
+
+  <script src="../JS/main.js"></script>
+
+</body>
+
+</html>

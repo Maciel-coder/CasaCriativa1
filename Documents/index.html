@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--este eh um comentario -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Casa Criativa</title>
+
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../Style/style.css">
+</head>
+
+<body>
+    <!--Inicio div conteudo total da page -->
+  <div class="container">
+
+    <section id="intro">
+      <!--inicio Sessão Inicial-->
+      <header>
+        <img src="../Image/logo.jpg">
+      </header>
+      <main>
+        <!--conteudo principal-->
+        <p>Ficar em casa em períodos longos, não deve ser nada fácil.</p>
+
+        <p>Iremos catalogar ideias, brincadeiras, jogos, filmes, livros, cursos, dicas e tudo que for necessário para
+          tornar esse momento mais interessante.</p>
+
+        <p>Comece clicando em ver ideias para ver as ideias cadastradas e contribua adicioando a sua ideia.</p>
+
+        <section id="buttons"> <!--inicio sessão botoes-->
+          <button onclick="onOff()"> + Adicionar Ideias</button>
+          <button class="fat"><a href="ideias.html"> Ver Ideias</a></button>
+        </section>
+        <!--Fim sessão botoes -->
+        <footer>
+          <p id="footer">Com ♥️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+        </footer>
+
+      </main>
+    </section>
+    <!--fim Sessão Inicial -->
+
+    <!-- Inicio Sessão Secundaria -->
+    <section id="last-ideas">
+      <div class="idea">
+        <!--idea 1-->
+        <img src="../Image/coding.png" alt="Course Dev">
+        <div class="content">
+          <h3>Course Programming</h3>
+          <p>Learning</p>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum eum vel illo laboriosam repellat totam velit deleniti, 
+            cum officiis debitis, in earum, commodi repellendus corporis recusandae quasi? Culpa, quia?
+          </div>
+          <a href="#">
+            Ir para Ideia
+          </a>
+        </div>
+      </div>
+      <!--fim idea 1-->
+
+      <!-- idea 2--> 
+      <div class="idea">
+        <img src="../Image/exercise.png" alt="Course Dev">
+        <div class="content">
+          <h3>Exercise</h3>
+          <p>Saude</p>
+          <div class="description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim earum natus dolorum rem beatae, 
+            quaerat amet magni at obcaecati necessitatibus est quas ea, 
+            possimus officia doloremque harum accusamus laborum sapiente!
+          </div>
+          <a href="#">
+            Ir para Ideia
+          </a>
+        </div>
+      </div>
+      <!--fim idea 2-->
+
+      <!-- idea 3-->
+      <div class="idea">
+        <img src="../Image/meditation.png" alt="Course Dev">
+        <div class="content">
+          <h3>Meditation</h3>
+          <p>mentality</p>
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima deserunt unde nam debitis, 
+            ipsa soluta iste architecto vitae in veniam sint eligendi qui reprehenderit quibusdam quod cumque fugit amet cupiditate!
+          </div>
+          <a href="#">
+            Ir para ideia
+          </a>
+        </div>
+      </div>
+      <!-- fim idea 3-->
+
+    </section>
+    <!--fim Sessão Secundaria -->
+  </div>
+  <!--Fim div conteudo total da page -->
+
+  <!--Inicio Sessão formulario -->
+  <div id="modal" class="hide">
+    <div class="content">
+      <h1>Nova Ideia</h1>
+      <form action="ideias.html" method="get" accept-charset="utf-8">
+        <div class="input-wrapper" <label for="title">Título da ideia</label>
+          <input type="text" name="title"/>
+        </div>
+        <div class="input-wrapper" <label for="category">Categoria</label>
+          <input type="text" name="category"/>
+        </div>
+        <div>
+          <label for="image">Link da imagem</label>
+          <input type="url" name="image"/>
+        </div>
+        <div>
+          <label for="description">digite uma descrição para a ideia</label>
+          <textarea name="description" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+          <label for="link">Link da ideia</label>
+          <input type="url" name="link"/>
+        </div>
+        <button>Salvar</button>
+        <a href="#" onclick="onOff()">Voltar</a>
+      </form>
+    </div>
+  </div>
+    <!-- Fim Sessão formulario -->
+
+    <script src="../JS/main.js"></script>
+
+</body>
+
+</html>
