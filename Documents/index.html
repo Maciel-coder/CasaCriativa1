@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <!--este eh um comentario -->
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,7 @@
   <!-- HTML -->
   <!-- Custom Styles -->
   <link rel="stylesheet" href="../Style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,900;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <section id="intro">
       <!--inicio Sessão Inicial-->
       <header>
-        <img src="../Image/logo.jpg">
+        <img src="../Image/logo.png">
       </header>
       <main>
         <!--conteudo principal-->
@@ -108,32 +109,41 @@
     <div class="content">
       <h1>Nova Ideia</h1>
       <form action="ideias.html" method="get" accept-charset="utf-8">
-        <div class="input-wrapper" <label for="title">Título da ideia</label>
+        <div class="input-wrapper" >
+          <label for="title">Título da ideia</label>
           <input type="text" name="title"/>
         </div>
-        <div class="input-wrapper" <label for="category">Categoria</label>
+        
+        <div class="input-wrapper">
+          <label for="category">Categoria</label>
           <input type="text" name="category"/>
         </div>
+        
         <div>
           <label for="image">Link da imagem</label>
           <input type="url" name="image"/>
         </div>
+
         <div>
           <label for="description">digite uma descrição para a ideia</label>
           <textarea name="description" rows="10" cols="30"></textarea>
         </div>
-        <div>
+
+        <div><!--inicio div link da imagem -->
           <label for="link">Link da ideia</label>
           <input type="url" name="link"/>
-        </div>
-        <button>Salvar</button>
+        </div><!--fim div link da imagem -->
+
         <a href="#" onclick="onOff()">Voltar</a>
+        <button>Salvar</button>
+        
       </form>
     </div>
   </div>
+
     <!-- Fim Sessão formulario -->
 
-    <script src="../JS/main.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 
