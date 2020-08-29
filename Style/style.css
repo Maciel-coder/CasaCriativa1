@@ -3,28 +3,34 @@ body {
   padding: 0;
   background-color: #e5e5e5; 
   color: #252828;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
 .container{
   width: 90%;
   margin:90, auto;
   max-width: 980px;
   display: flex; 
   justify-content: center;
+  margin: 40px, 40px;
   
 }
 #intro{
   width: 300px;
-  margin-right: 20px, auto;
-  margin-top: 20px;
+  margin: 20px 20px;
+  
 }
 
 main{
   margin: 32px 0;
+ 
 }
 
 #buttons{
   display: flex;
   margin-bottom: 32px;
+  justify-content: space-evenly;
 }
 
 #butons, footer{
@@ -66,16 +72,10 @@ button .fat:hover{
   text-decoration: none;
 }
 
-a{
-  color: #ff5e84;
-  font-weight: bold;
-  text-decoration: none;
-}
 
-a:hover{
-  text-decoration: underline;
-}
+
 .idea{
+  width: 90%;
   display: flex;
   margin: 32px;
   border-radius: 8px;
@@ -83,6 +83,7 @@ a:hover{
   background-color: #fff;
   padding: 32px;
 }
+
 
 .idea img {
   width: 60px;
@@ -121,7 +122,7 @@ p, .description{
 }
 
 #modal .content{
-  margin-top: 10%;
+  margin-top: 5%;
   color: white;
 }
 
@@ -152,7 +153,7 @@ form textarea{
   box-sizing: border-box;
 }
 
-form{
+form label{
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.8px;
@@ -203,7 +204,7 @@ form button:hover{
   background: #0984e3;
   color: white;
   text-decoration: none; 
-  margin-top: 32px;
+
 }
 
 .content form div:nth-child(3),
@@ -239,13 +240,16 @@ footer a:hover {
   color: #252828;
 }
 
-a {
+a { /*estilizando aplicado a todos os links da page*/
   color: #ff5e84;
   font-weight: bold;
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
 
-/*estilizando aplicado a todos os links da page*/
+
 
 /*========================*/
 
@@ -347,6 +351,11 @@ section#title,
 section#idea,
 footer {
   margin: 32px;
+}
+
+#modal.hide{
+  opacity: 0;
+  visibility: hidden;
 }
 
 bady.hideScroll{
